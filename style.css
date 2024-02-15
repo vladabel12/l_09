@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    max-width: 400px;
+    padding: 50px;
+}
+.field{
+    display: block;
+    margin-bottom: 20px;
+}
+.field__title {
+    color: rgb(82, 87, 92);
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 2px;
+}
+.field__input {
+    width: 100%;
+    outline: 0;
+    padding: 12px;
+    color: #3b4256;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    border: 0;
+    background: #f8fafc;
+    border-radius: 4px;
+}
+.field__input::placeholder{
+    color: rgb(147, 157, 167);
+}
+.field__textarea{
+    resize: vertical;
+    min-height: 100px;
+    max-height: 400px;
+}
+.radio{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.radio__input{
+    display: none;
+}
+.radio__input:checked ~ .radio__box .radio__circle{
+    transform: scale(1);
+}
+.radio__box{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #3b4256;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.radio__circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #3b4256;
+    transform: scale(0);
+    transition: 0.2s all ease-in-out;
+
+}
+.radio__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #3b4256;
+    margin-bottom: 10px;
+}
